@@ -1,0 +1,20 @@
+# --- Data (too big for GitHub; download instructions in README) ---
+data/raw/
+data/processed/
+*.duckdb
+*.db
+
+# --- Jupyter / Python clutter ---
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+*.pyc
+.env
+
+# --- Anaconda / editor / macOS ---
+anaconda_projects/
+.vscode/
+.DS_Store
+
+# --- Stray empty notebook ---
+notebooks/01_first_look/
