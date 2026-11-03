@@ -26,6 +26,14 @@ _Work in progress, updated as the analysis progresses._
 
 ![Cohort retention](reports/figures/cohort_retention.png)
 
+**RFM segmentation** (`notebooks/03_rfm_segmentation.ipynb`):
+- Repeat customers are only **2.2%** of customers but spend about **2× the average**.
+- **High-value new** and **Big spenders at risk** one-timers are **31% of customers but 56% of revenue**. These are the customers to win a second order from.
+- First-purchase category significantly affects return rate (χ² p ≈ 3e-7): **fashion bags, pet shop, bed/bath/table and sports** repeat at up to **3×** the rate of *cool_stuff*.
+- **Recommendation:** a second-purchase campaign within ~90 days for high-value new customers in high-repeat categories.
+
+![RFM segments](reports/figures/rfm_segments.png)
+
 ## Tech stack
 SQL (DuckDB) · Python (pandas, matplotlib, seaborn, scipy, scikit-learn) · Power BI (DAX, Power Query) · Git/GitHub
 
