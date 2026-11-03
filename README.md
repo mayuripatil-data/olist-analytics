@@ -19,6 +19,13 @@ _Work in progress, updated as the analysis progresses._
 - **8%** of orders arrived late. Late orders average **2.57★** vs **4.29★** on time, and **45%** of late orders get a 1-star review (vs 7%).
 - Late-delivery rate is highest in **MA (19.7%)**, **CE (15.3%)** and **BA (14.0%)**; RJ is the largest problem by volume (12k orders, 13.5% late).
 
+**Retention analysis** (`notebooks/02_retention_delivery.ipynb`):
+- Using a strict definition (a later-day order within 180 days), only **1.97%** of customers come back. Month-1 cohort retention averages **0.5%**.
+- Customers whose first order was late returned at **1.69% vs 2.00%**, but this is **not statistically significant** (χ² p ≈ 0.18).
+- **Takeaway:** late delivery damages ratings, but it is not what drives the low repeat rate. That is structural, so the next step is to find who *does* return (RFM segmentation).
+
+![Cohort retention](reports/figures/cohort_retention.png)
+
 ## Tech stack
 SQL (DuckDB) · Python (pandas, matplotlib, seaborn, scipy, scikit-learn) · Power BI (DAX, Power Query) · Git/GitHub
 
